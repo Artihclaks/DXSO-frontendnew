@@ -1,0 +1,24 @@
+.custom-container{
+    background-color:#cfd9de;
+    -webkit-text-fill-color: #333333;
+}
+
+.custom-field{
+    text-align: left;
+}
+
+.custom-cardbdy{
+    margin-left: 20%;
+}
+
+.custom-card{
+    background-color: #adbfc9;
+}
+
+.custom-textfld{
+    background-color: #cfd9de;
+}
+
+.custom-head{
+    text-decoration-color: #4b4928;
+}

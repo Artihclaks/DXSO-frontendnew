@@ -43,10 +43,6 @@
     font-weight: bolder;
   }
 
-  .custom-font{
-    font-family: Verdana;
-  }
-
   .toggle-button {
     position: relative;
     display: inline-block;
@@ -78,3 +74,20 @@
     transform: translateX(30px);
   }
   
+  .custom-font{
+    background-color: #5E7D7E;
+  }
+
+  .custom-field{
+    padding: 0%;
+    margin: 0%;
+    text-align: left;
+  }
+
+  .custom-cardbdy{
+    padding:0%;
+  }
+
+  .c1{
+    text-align: left;
+  }
