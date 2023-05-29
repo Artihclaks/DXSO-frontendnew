@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Banner from './Banner';
 import Gridlay from './BOMDetails';
 import './CustomStyles.css';
+import DropdownWithOther from './Material';
 
 function Order() {
     
@@ -10,102 +11,110 @@ function Order() {
       <Banner />
     </div>
     <form>
-          <div class="form-row">
+        <div class="row">
+            <div class="col">
+                <div class="form-row">
+                    <DropdownWithOther/>
+                </div>
+            </div>
+
+            <div class="col">
+                <div className="input-group input-group-sm">
+                    <label className="col-sm-6 col-form-label">Qty in Drawing</label>
+                    <div className="col-sm-6">
+                        <input type='number' class="form-control custom-textfield" placeholder='1'/>
+                </div>
+            </div>
+            </div>
+
+            <div class="col">
+                <div className="input-group input-group-sm">
+                    <label className="col-sm-6 col-form-label">Thickness</label>
+                    <div className="col-sm-6">
+                        <input  type='number'  step="0.1" class="form-control custom-textfield" placeholder='1.00'/>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div className="input-group input-group-sm">
+                    <label className="col-sm-6 col-form-label">Width</label>
+                    <div className="col-sm-6">
+                        <input  type='number' step="0.1" class="form-control custom-textfield" placeholder='1.00'/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div className="input-group input-group-sm">
+                    <label className="col-sm-6 col-form-label">Length</label>
+                    <div className="col-sm-6">
+                        <input  type='number'  step="0.1" class="form-control custom-textfield" placeholder='1.00'/>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+
+
+
+        <div class="row">
             
-             <label>Material</label> 
-            <select name="material" id="material form-control" class="form-control rounded custable" required>
-              <option value="sgcc">SGCC</option>
-              <option value="ms">MS</option>
-              <option value="other">Other</option>
-              </select>
+            <div class="col">
+                <div className="input-group input-group-sm">
+                    <label className="col-sm-6 col-form-label">Qty in Drawing</label>
+                    <div className="col-sm-6">
+                        <input type='number' class="form-control custom-textfield" placeholder='1'/>
+                </div>
             </div>
-    
-        
-        
-        </form>
-
-    <div class="card w-25 custom-card">
-        <div class="title"><h4>SPECIFICATIONS</h4></div>
-        
-        
-            
-            <div class="card-body custom-cardbdy">
-            <center>
-            <form class="needs-validation" noValidate>
-            <div class="form-group">
-                <label class="c1 col-form-label">Material</label>
-
-
-
-                
-
-        
-              
-            </div><br></br>
-
-                <div class="form-group row">
-                <label for="inputOrderNumber" class="col-sm-5 col-form-label custom-field">Order Number</label>
-                <div class="col-sm-5">
-                    <input type="number" class="form-control custom-textfld" id="inputOrderNumber" placeholder="AC20UCS000" required/>
-                </div>
-                </div><br></br>
-
-                <div class="form-group row">
-                <label for="inputCustomerName" class="col-sm-5 col-form-label custom-field">Customer Name</label>
-                <div class="col-sm-5">
-                    <input type="text" class="form-control custom-textfld" id="inputCustomerName" placeholder="Name" required/>
-                </div>
-                </div><br></br>
-
-                <div class="form-group row">
-                <label for="inputPlannerName" class="col-sm-5 col-form-label custom-field">Planner Name</label>
-                <div class="col-sm-5">
-                    <input type="text" class="form-control custom-textfld" id="inputPlannerName" placeholder="Name" required/>
-                </div>
-                </div><br></br>
-
-                <div class="form-group row">
-                <label for="inputDeadline" class="col-sm-5 col-form-label custom-field">Dead-line</label>
-                <div class="col-sm-5">
-                    <input type="date" class="form-control custom-textfld" id="inputDeadline" placeholder=" " required/>
-                </div>
-                </div><br></br>
-
-                <div class="form-group row">
-                <label for="inputBatchControl" class="col-sm-5 col-form-label custom-field">Batch Control</label>
-                <div class="col-sm-5">
-                    <input type="number" class="form-control custom-textfld" id="inputBatchControl" placeholder="0" required/>
-                </div>
-                </div><br></br>
-
-                <div class="form-group row">
-                <label for="inputQuantity" class="col-sm-5 col-form-label custom-field">Quantity</label>
-                <div class="col-sm-5">
-                    <input type="number" class="form-control custom-textfld" id="inputQuantity" placeholder="0" required/>
-                </div>
-                </div><br></br>
-
-                <div class="form-group row">
-                <label for="inputPartNO" class="col-sm-5 col-form-label custom-field">Part Number</label>
-                <div class="col-sm-5">
-                    <input type="text" class="form-control custom-textfld" id="inputPartNO" placeholder="AC20UCS---" required/>
-                </div>
-                </div>
-
-            </form>
-            </center>
             </div>
-            <footer>
-                <div class="form-group row"><center>
-                    <button class="btn btn-block custom-btn " style={{width: '150px', backgroundColor: '#5E7D7E'}} type="submit"><b>Make Plan</b></button></center>
+
+            <div class="col">
+                <div className="input-group input-group-sm">
+                    <label className="col-sm-6 col-form-label">Qty in Drawing</label>
+                    <div className="col-sm-6">
+                        <input type='number' class="form-control custom-textfield" placeholder='1'/>
                 </div>
-            </footer><br></br>
-
-
             </div>
-      
+            </div>
+
+            <div class="col">
+                <div className="input-group input-group-sm">
+                    <label className="col-sm-6 col-form-label">Thickness</label>
+                    <div className="col-sm-6">
+                        <input  type='number'  step="0.1" class="form-control custom-textfield" placeholder='1.00'/>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div className="input-group input-group-sm">
+                    <label className="col-sm-6 col-form-label">Width</label>
+                    <div className="col-sm-6">
+                        <input  type='number' step="0.1" class="form-control custom-textfield" placeholder='1.00'/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div className="input-group input-group-sm">
+                    <label className="col-sm-6 col-form-label">Length</label>
+                    <div className="col-sm-6">
+                        <input  type='number'  step="0.1" class="form-control custom-textfield" placeholder='1.00'/>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+        
+    </form>
+
+
+
     </>
   )
 }
 
-export default Order
+export default Order;

@@ -57,7 +57,7 @@ const DropdownWithOther = () => {
   <div className="input-group input-group-sm">
     <label className="col-sm-6 col-form-label">Other Material</label>
     <div className="col-sm-6">
-      <input type="text" className="form-control" value={otherValue} onChange={handleTextBoxChange} />
+      <input type="text" className="form-control" value={otherValue} onChange={handleTextBoxChange} /><br></br>
     </div>
   </div>
 )}

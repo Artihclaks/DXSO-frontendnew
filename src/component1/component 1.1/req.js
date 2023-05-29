@@ -15,7 +15,7 @@ function Requirement(){
         <div class="custom-container">
             <center>
 
-            <h3  class=" w-25 rounded">ACE Electricals Planning</h3>
+            <h3  class=" w-25 rounded">ACE Electricals Planning</h3><br></br>
             <div class="card w-50 custom-card">
             <div class="title"><h4>REQUIREMENTS</h4></div>
             <div class="card-body custom-cardbdy">
@@ -75,7 +75,7 @@ function Requirement(){
                 <div class="col-sm-5">
                     <input type="text" class="form-control custom-textfld" id="inputPartNO" placeholder="AC20UCS---" required/>
                 </div>
-                </div>
+                </div><br></br>
 
             </form>
             </center>
